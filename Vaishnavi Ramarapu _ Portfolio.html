@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Vaishnavi Ramarapu | Data & Analytics Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root{--bg:#0a0508;--card:#170d13;--line:#33202a;--ink:#ffffff;--muted:#e2c3d1;--pink:#f472b6;--btn:#db2777;--deep:#9d174d;
+box-sizing:border-box;color-scheme:dark;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth;background:var(--bg)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 Inter,system-ui,sans-serif}
+h1,h2,h3{margin:0;line-height:1.15}
+a{color:var(--pink)}
+a:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+header.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:12px;flex-wrap:wrap}
+.logo{font:600 2rem "Dancing Script",cursive;color:var(--pink);text-decoration:none}
+nav a{margin-left:22px;color:var(--ink);text-decoration:none;font-weight:500}
+nav a:hover,nav a.on{color:var(--pink)}
+.hero{text-align:center;padding:64px 0 72px}
+.hero h1{font-size:clamp(2.6rem,8vw,5.2rem);font-weight:700;letter-spacing:-.03em}
+.hero h1 span{color:var(--pink)}
+.hero p{max-width:36em;margin:20px auto 28px;font-size:1.15rem;color:var(--muted)}
+.bars{display:flex;align-items:flex-end;justify-content:center;gap:6px;height:64px;margin:44px auto 0;max-width:520px}
+.bars i{flex:1;border-radius:4px 4px 0 0;display:block}
+.btn{display:inline-block;padding:11px 24px;border-radius:99px;background:var(--btn);color:#fff;text-decoration:none;font-weight:600;margin:0 5px 10px}
+.btn.alt{background:transparent;color:var(--pink);border:1.5px solid var(--pink)}
+section{padding:64px 0}
+.head{text-align:center;margin-bottom:40px}
+.head h2{font-size:2.4rem;font-weight:700}
+.head p{max-width:34em;margin:12px auto 0;color:var(--muted);font-size:1.1rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:28px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.banner{height:120px;background:
+radial-gradient(circle at var(--x1) 85%,var(--c1) 0 22%,transparent 23%),
+radial-gradient(circle at var(--x2) 95%,var(--c2) 0 26%,transparent 27%),
+radial-gradient(circle at 50% 100%,var(--c3) 0 30%,transparent 31%),
+linear-gradient(160deg,#2a0f1f,#6b1f48 70%,#a8326f)}
+.body{padding:20px;display:flex;flex-direction:column;flex:1}
+.body h3{font-size:1.1rem;font-weight:600;margin-bottom:8px}
+.body p{margin:0 0 16px;font-size:.92rem;color:var(--muted);flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.tags li{font-size:.78rem;padding:2px 14px;border:1.5px solid var(--pink);border-radius:99px;color:var(--ink)}
+.card .btn{display:block;text-align:center;margin:18px 0 0}
+.skills .card{padding:22px}
+.skills h3{font-size:1.05rem;color:var(--pink);margin-bottom:14px}
+.tl{max-width:900px;margin:0 auto}
+.step{display:grid;grid-template-columns:64px 1fr;gap:24px;position:relative;padding-bottom:28px}
+.step:last-child{padding-bottom:0}
+.step:not(:last-child)::before{content:"";position:absolute;left:31px;top:64px;bottom:0;width:2px;background:var(--deep)}
+.dot{width:64px;height:64px;border-radius:50%;background:var(--btn);display:grid;place-items:center;font-weight:700;font-size:.95rem;position:relative;z-index:1}
+.step .card{padding:20px 24px}
+.step h3{font-size:1.1rem;font-weight:600}
+.step .at{color:var(--pink);font-size:.92rem;margin:2px 0 10px}
+.step ul{margin:0;padding-left:20px;color:var(--muted);font-size:.95rem}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:28px;max-width:900px;margin:0 auto}
+.edu .card{padding:26px;border-top:5px solid var(--pink)}
+.edu h3{font-size:1.15rem;font-weight:600;margin-bottom:6px}
+.edu .meta{color:var(--pink);font-size:.92rem;margin:0 0 12px}
+.edu p{margin:0 0 14px;color:var(--muted)}
+.center{text-align:center}
+.center .head p{margin-bottom:24px}
+footer{padding:30px 0;color:var(--muted);font-size:.9rem;text-align:center;border-top:1px solid var(--line)}
+@media (max-width:640px){nav a{margin:0 16px 0 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="nav">
+<a class="logo" href="#home">vaishnavi</a>
+<nav aria-label="Sections"><a href="#home">Home</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+</header>
+<div class="hero" id="home">
+<h1>Vaishnavi <span>Ramarapu</span></h1>
+<p>I turn your black &amp; white data colorful. Software engineering graduate focused on data science and analytics: cleaning messy data, building models and dashboards, and explaining the results in plain language.</p>
+<a class="btn" href="#projects">See my projects</a><a class="btn alt" href="https://github.com/Vaishnavi-Ram-ok">GitHub</a>
+<div class="bars" aria-hidden="true">
+<i style="height:30%;background:#8a8a8a"></i><i style="height:55%;background:#a89ba2"></i><i style="height:40%;background:#c0a0b2"></i><i style="height:70%;background:#d6a8bd"></i><i style="height:50%;background:#e8a9c3"></i><i style="height:85%;background:#f3a6c4"></i><i style="height:65%;background:#f783ac"></i><i style="height:100%;background:#f06595"></i><i style="height:75%;background:#e64980"></i><i style="height:90%;background:#d6336c"></i><i style="height:60%;background:#c2255c"></i><i style="height:80%;background:#a61e4d"></i>
+</div>
+</div>
+</div>
+
+<!-- 1) CSS: in your <style>, replace the whole old ".banner{...}" rule with this -->
+<style>
+.banner{display:block;width:100%;height:160px;object-fit:cover;background:#33202a}
+</style>
+
+
+<section id="projects"><div class="wrap">
+<div class="head"><h2>My Projects</h2><p>A collection of data science, machine learning and analytics projects I've built, from SQL analysis to dashboards and web apps.</p></div>
+<div class="grid">
+<article class="card"><img class="banner" src="https://i.pinimg.com/736x/f6/c0/2f/f6c02f4094105a84170ec943b96d5dc8.jpg" alt="SMS Spam Classifier project" loading="lazy"><div class="body">
+<h3>SMS Spam Classifier</h3><p>Machine learning and NLP model that tells whether a text message is spam or legitimate. Built on exploratory analysis, duplicate removal and text cleaning, reaching 97% accuracy.</p>
+<ul class="tags"><li>Python</li><li>Scikit-Learn</li><li>NLTK</li><li>Streamlit</li></ul>
+<a class="btn" href="https://github.com/Vaishnavi-Ram-ok/Python_SMS-Classifier">View Details</a></div></article>
+<article class="card"><img class="banner" src="https://i.pinimg.com/1200x/d0/49/3f/d0493f17bfe490672709d4bc74b7a0c0.jpg" alt="Book Recommender System project" loading="lazy"><div class="body">
+<h3>Book Recommender System</h3><p>End-to-end recommender that runs exploratory analysis and generates personalized book suggestions using collaborative filtering, served through a Flask app.</p>
+<ul class="tags"><li>Python</li><li>Flask</li><li>Scikit-Learn</li><li>EDA</li></ul>
+<a class="btn" href="https://github.com/Vaishnavi-Ram-ok/Book-Recommender-System">View Details</a></div></article>
+<article class="card"><img class="banner" src="https://i.pinimg.com/736x/11/ba/1f/11ba1f35a55077041ab9f790cae27d73.jpg" alt="MNIST Digit Recognition project" loading="lazy"><div class="body">
+<h3>MNIST Digit Recognition</h3><p>Two-layer neural network written from scratch in NumPy that classifies handwritten digits, covering preprocessing, one-hot encoding and forward propagation.</p>
+<ul class="tags"><li>Python</li><li>NumPy</li><li>Neural networks</li></ul>
+<a class="btn" href="https://github.com/Vaishnavi-Ram-ok/MNIST-Digit_Recognition-Neural_Networks">View Details</a></div></article>
+<article class="card"><img class="banner" src="https://i.pinimg.com/736x/fa/7a/ae/fa7aae51c3f9cece4c5b453fee8c4a4e.jpg" alt="E-Commerce Sales Dashboard project" loading="lazy"><div class="body">
+<h3>E-Commerce Sales Dashboard</h3><p>Interactive Power BI dashboard that tracks sales, profit and customer metrics so a business can see what drives results.</p>
+<ul class="tags"><li>Power BI</li><li>DAX</li><li>Data visualization</li></ul>
+<a class="btn" href="https://github.com/Vaishnavi-Ram-ok/ECommerce-Sales-Analysis---PowerBI">View Details</a></div></article>
+<article class="card"><img class="banner" src="https://i.pinimg.com/736x/3d/b2/b2/3db2b215a22e64a04a8c2f8e770adb53.jpg" alt="Customer Churn Analysis project" loading="lazy"><div class="body">
+<h3>Customer Churn Analysis</h3><p>End-to-end Power BI project that uncovers the "why" behind customer churn, not just how many customers leave.</p>
+<ul class="tags"><li>Power BI</li><li>DAX</li><li>Power Query</li></ul>
+<a class="btn" href="https://github.com/Vaishnavi-Ram-ok/PowerBi_Customer-Churn-Analysis">View Details</a></div></article>
+<article class="card"><img class="banner" src="https://i.pinimg.com/736x/09/6d/78/096d789651958e061bce4d44c3aaed6f.jpg" alt="Zepto Data Analysis in SQL project" loading="lazy"><div class="body">
+<h3>Zepto Data Analysis in SQL</h3><p>Simulates a real data analyst workflow on an e-commerce inventory dataset scraped from Zepto, using SQL to turn raw tables into retail insights.</p>
+<ul class="tags"><li>SQL</li><li>PostgreSQL</li><li>Data cleaning</li></ul>
+<a class="btn" href="https://github.com/Vaishnavi-Ram-ok/Zepto_Data_Analysis_SQL">View Details</a></div></article>
+</div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<div class="head"><h2>Skills</h2><p>The languages, tools and methods I use to work with data.</p></div>
+<div class="grid skills">
+<div class="card"><h3>Programming and scripting</h3><ul class="tags"><li>Python</li><li>Pandas</li><li>NumPy</li><li>Scikit-Learn</li><li>NLTK</li><li>SQL</li><li>PostgreSQL</li><li>MySQL</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Java</li><li>R</li></ul></div>
+<div class="card"><h3>Dashboards and web applications</h3><ul class="tags"><li>Streamlit</li><li>Flask</li><li>Power BI</li><li>DAX</li><li>Power Query</li><li>Tableau</li><li>Matplotlib</li><li>Seaborn</li></ul></div>
+<div class="card"><h3>Data quality and management</h3><ul class="tags"><li>Data validation</li><li>Data cleaning</li><li>EDA</li><li>Data ingestion</li><li>Data modelling</li><li>Schema design</li><li>Normalization</li><li>Query optimization</li><li>Metrics reporting</li></ul></div>
+<div class="card"><h3>Machine learning and analytics</h3><ul class="tags"><li>Classification</li><li>Regression</li><li>Model building and validation</li><li>Feature engineering</li><li>NLP</li><li>Hypothesis testing</li><li>Statistical analysis</li></ul></div>
+<div class="card"><h3>Cloud (AWS)</h3><ul class="tags"><li>EC2</li><li>S3</li><li>Lambda</li><li>IAM</li><li>DynamoDB</li><li>SQS</li><li>SageMaker</li></ul></div>
+<div class="card"><h3>Tools</h3><ul class="tags"><li>Git</li><li>GitHub</li><li>Docker</li><li>Jira</li><li>Jupyter Notebook</li><li>Excel</li></ul></div>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<div class="head"><h2>Experience</h2></div>
+<div class="tl">
+<div class="step"><div class="dot">2025</div><div class="card"><h3>Talent Acquisition &amp; Data Specialist</h3><p class="at">at Baanyan Software Services · May 2025 – Apr 2026</p>
+<ul><li>Analysed and validated recruitment workflow data to uncover inefficiencies, driving a 15% improvement in operational efficiency.</li><li>Applied data modelling best practices (normalization, schema design) to optimize data storage and improve query performance by 25%.</li></ul></div></div>
+<div class="step"><div class="dot" style="font-size:.8rem">2024</div><div class="card"><h3>IoT Data Engineering Intern</h3><p class="at">at Tejasya Innovations</p>
+<ul><li>Built a real-time Industrial Health Monitoring System integrating IoT sensors with ThingSpeak for live data ingestion and visualization; developed a mobile telemetry dashboard for operational diagnostics.</li></ul></div></div>
+</div>
+</div></section>
+
+<section id="education"><div class="wrap">
+<div class="head"><h2>Education</h2></div>
+<div class="edu">
+<div class="card"><h3>B.Sc. (Hons) Software Engineering</h3><p class="meta">St. Francis College for Women, Hyderabad · Graduated Apr 2025</p>
+<p>Computer Science, Mathematics and Statistics. GPA 8.7/10.</p></div>
+<div class="card"><h3>Certifications & Licenses</h3>
+<ul class="tags"><li>IBM: Artificial Intelligence Fundamentals</li><li>IBM: Python for Data Science </li><li>CCNA: Introduction to Networks</li><li>CCNA: Switching, Routing and Wireless Essentials</li><li>AWS: Prompt Engineering</li><li>Cognitive Class: Relational Database and SQL</li></ul></div>
+</div>
+</div></section>
+
+<section id="contact" class="center"><div class="wrap">
+<div class="head"><h2>Contact</h2><p>I'm open to data science and analytics roles. Reach out and I'll reply quickly.</p></div>
+<a class="btn" href="mailto:ramarapuvaishnavi@gmail.com">ramarapuvaishnavi@gmail.com</a><a class="btn alt" href="https://github.com/Vaishnavi-Ram-ok">GitHub</a><a class="btn alt" href="https://www.linkedin.com/in/vaishnavi-ramarapu-6a8232317/?isSelfProfile=true">LinkedIn</a>
+</div></section>
+
+<footer><div class="wrap">Vaishnavi Ramarapu · Hyderabad, India</div></footer>
+<script>
+(function(){var links=document.querySelectorAll('nav a');var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a});
+if(!('IntersectionObserver' in window))return;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.remove('on')});var a=map[e.target.id];if(a)a.classList.add('on')}})},{rootMargin:'-40% 0px -55% 0px'});
+Object.keys(map).forEach(function(id){var s=document.getElementById(id);if(s)io.observe(s)})})();
+</script>
+</body>
+</html>
